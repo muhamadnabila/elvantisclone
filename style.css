@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.container-nav{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px 15px 50px;
+    color: #ecc43f;
+    background-image: url("https://www.elvantis.com/images/Rectangle-284.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav{
+}
+.nav ul{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 50%;
+}
+.nav li{
+    display: flex;
+    margin: 0 20px;
+}
+.logo{
+    background-color: #050114;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+.logo img{
+    width: 135px;
+}
+#hero{
+    background: #23266c;
+    height: 130vh;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper-social-link{
+    position: fixed;
+    left: 30px;
+    top: 60%;
+    transform: translateY(-50%);
+    margin-top: -80px;
+}
+.social-link{
+    width: 55px;
+    height: 55px;
+    background: #181523;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.banner-logo{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-btn{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-btn a, .welcome-text a{
+    width: 230px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #ecc43e;
+    color: #fff;
+}
+#hero::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #050113);
+    bottom: 0;
+    z-index: 5;
+}
+#website-content{
+    background-color: #050113;
+    position: relative;
+}
+#about{
+    position:relative;
+}
+.welcome-text{
+    text-align: center;
+}
+h2{
+    font-size: 46px;
+    line-height: 64px;
+    color: #fff;
+    background: linear-gradient(82.68deg, #031ee3 -7.22%, #c91ee3 46.39%, #ffc511 104.67% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+p{
+    color: #fff;
+    max-width: 1135px;
+    margin: 0 auto;
+    line-height: 24px;
+}
+.welcome-text a{
+    text-decoration: none;
+    margin: 80px auto;
+    font-weight: 600;
+    font-size: 14px;
+}
+.carousel{
+    display: flex;
+    /* transform: translate3d(-100px, 0px, 0px); */
+    overflow: hidden;
+}
+.carousel::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(88.44deg, rgba(5, 1, 19, 0) 4.98%, #050113 93.84% );
+    width: 275px;
+    height: 100%;
+    z-index: 99;
+    transform: rotate(
+-180deg);
+    left: 0;
+    top: 0;
+}
+.carousel::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(88.44deg, rgba(5, 1, 19, 0) 4.98%, #050113 93.84% );
+    width: 275px;
+    height: 100%;
+    z-index: 99;
+    right: 0;
+    top: 0;
+}
+.carousel .item{
+    width: 620px;
+    margin-right: 30px;
+}
+.carousel .item video{
+    border-radius: 20px;
+}
+#ecosystem, #character{
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#ecosystem::before{
+    content: "";
+    position: absolute;
+    background: url('https://www.elvantis.com/images/radial.png');
+    width: 20vw;
+    height: 45.8vw;
+    background-size: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100px;
+    animation-name: opacityAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#ecosystem .item-img{
+    width: 45%
+}
+#ecosystem .item-text{
+    width: 45%
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+#character h2{
+    position:relative;
+    padding-bottom: 30px;
+}
+#character h2::before{
+    position: absolute;
+    content: "";
+    background: linear-gradient(82.68deg, #ffc511 -7.22%, #c91ee3 46.39%, #031ee3 104.67% );
+    width: 133px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#character h3{
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
